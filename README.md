@@ -1,6 +1,6 @@
 # Bugs Bunny: Lost in Time — edición Windows 11
 
-Paquete listo para jugar al *Bugs Bunny: Lost in Time* (PC, 1999) en Windows 10/11 modernos,
+*Bugs Bunny: Lost in Time* (PC, 1999) en Windows 10/11 modernos,
 sin dgVoodoo, sin CD y sin configurar nada a mano.
 
 El juego original se vendió para Windows 95/98 y hoy arranca mal o directamente no arranca:
