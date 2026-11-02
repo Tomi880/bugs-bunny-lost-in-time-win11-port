@@ -1,0 +1,12 @@
+# Imagen del disco original y paquetes temporales (no van al repo)
+*.iso
+*.zip
+trabajo/
+
+# Basura del sistema
+.DS_Store
+__MACOSX/
+
+# Logs de ejecución
+lanzador.log
+remaster.log

@@ -1,0 +1,9 @@
+#define IDD_MAIN        101
+#define IDC_FPS         1001
+#define IDC_MSAA        1002
+#define IDC_DRAW        1003
+#define IDC_LIGHT       1004
+#define IDC_HUD         1005
+#define IDC_XINPUT      1006
+#define IDC_RESET       1007
+#define IDC_OPENHELP        1008

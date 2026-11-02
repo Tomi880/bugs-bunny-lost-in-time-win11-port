@@ -1,0 +1,31 @@
+#include <windows.h>
+#include "resource.h"
+
+1 ICON "bug.ico"
+
+IDD_MAIN DIALOGEX 0, 0, 300, 206
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bugs Bunny: Lost in Time"
+FONT 9, "Segoe UI", 400, 0, 0x1
+BEGIN
+    GROUPBOX        "Vídeo", -1, 7, 7, 286, 128
+    LTEXT           "Refresco:", -1, 16, 22, 72, 9
+    COMBOBOX        IDC_FPS, 94, 20, 188, 90, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Antialiasing:", -1, 16, 42, 72, 9
+    COMBOBOX        IDC_MSAA, 94, 40, 188, 70, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Distancia de dibujado:", -1, 16, 62, 72, 9
+    COMBOBOX        IDC_DRAW, 94, 60, 188, 80, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Brillo del mundo:", -1, 16, 82, 72, 9
+    COMBOBOX        IDC_LIGHT, 94, 80, 188, 70, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Anclaje del HUD:", -1, 16, 102, 72, 9
+    COMBOBOX        IDC_HUD, 94, 100, 188, 70, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Se dibuja a la resolución nativa del monitor, en 16:9 sin estirar.", -1, 16, 121, 260, 9
+
+    GROUPBOX        "Entrada", -1, 7, 141, 286, 34
+    CONTROL         "Mando XInput (movimiento analógico y cámara con el stick derecho)", IDC_XINPUT, "Button", BS_AUTOCHECKBOX | WS_TABSTOP, 16, 153, 260, 11
+
+    DEFPUSHBUTTON   "Jugar", IDOK, 7, 182, 70, 17
+    PUSHBUTTON      "Restaurar", IDC_RESET, 82, 182, 70, 17
+    PUSHBUTTON      "Ayuda", IDC_OPENHELP, 157, 182, 60, 17
+    PUSHBUTTON      "Salir", IDCANCEL, 223, 182, 70, 17
+END
